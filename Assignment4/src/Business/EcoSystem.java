@@ -24,7 +24,7 @@ public class EcoSystem extends Organization{
     private CustomerDirectory customerDirectory;
     private DeliveryManDirectory deliveryManDirectory;
 
-    
+    //Customer Directory methods to get and set values
     public CustomerDirectory getCustomerDirectory() {
         if(customerDirectory == null)
         {
@@ -35,6 +35,32 @@ public class EcoSystem extends Organization{
 
     public void setCustomerDirectory(CustomerDirectory customerDirectory) {
         this.customerDirectory = customerDirectory;
+    }
+    
+    //Restaurant Directory methods to get and set values
+    public RestaurantDirectory getRestaurantDirectory() {
+        if(restaurantDirectory == null)
+        {
+            restaurantDirectory = new RestaurantDirectory();
+        }
+        return restaurantDirectory;
+    }
+
+    public void setRestaurantDirectory(RestaurantDirectory restaurantDirectory) {
+        this.restaurantDirectory = restaurantDirectory;
+    }
+    
+    //Delivery Man methods to get and set values
+    public DeliveryManDirectory getDeliveryManDirectory() {
+        if(deliveryManDirectory == null)
+        {
+            deliveryManDirectory = new DeliveryManDirectory();
+        }
+        return deliveryManDirectory;
+    }
+
+    public void setDeliveryManDirectory(DeliveryManDirectory deliveryManDirectory) {
+        this.deliveryManDirectory = deliveryManDirectory;
     }
     
     
