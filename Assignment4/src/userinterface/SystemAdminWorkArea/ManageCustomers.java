@@ -40,7 +40,7 @@ public class ManageCustomers extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-       // for()
+       //checking each user
         for (UserAccount user : system.getUserAccountDirectory().getUserAccountList()) {
            
             if ("Business.Role.CustomerRole".equals(user.getRole().getClass().getName())) {
@@ -253,40 +253,40 @@ public class ManageCustomers extends javax.swing.JPanel {
               
         try {
              if(name==null || name.isEmpty()){
-                throw new NullPointerException(" Name field is Empty");
+                throw new NullPointerException("The field of Name is Empty.");
                 
                 
             }else if(name.length()<5 || Pattern.matches("^[A-Za-z]+$", name)==false){
-                throw new Exception("Please enter valid  Name");
+                throw new Exception("The entered name is not in a valid format.");
                 
             }
         } catch(NullPointerException e){
-            JOptionPane.showMessageDialog(null, " Name is Empty");
+            JOptionPane.showMessageDialog(null, "The field of Name is Empty.");
            
             return;
             
         }catch (Exception e){
-            JOptionPane.showMessageDialog(null, "  Name is invalid");
+            JOptionPane.showMessageDialog(null, "The entered name is not of valid format.");
        
             return;
         }
         
         try {
              if(uname==null || uname.isEmpty()){
-                throw new NullPointerException("User Name field is Empty");
+                throw new NullPointerException("The field of User Name is Empty.");
                 
                 
             }else if(uname.length()<5){
-                throw new Exception("Please enter valid User Name");
+                throw new Exception("Please enter User Name in valid format. It cannot be lesser than 5 characters.");
                 
             }
         } catch(NullPointerException e){
-            JOptionPane.showMessageDialog(null, "User Name is Empty");
+            JOptionPane.showMessageDialog(null, "The field of User Name is Empty.");
            
             return;
             
         }catch (Exception e){
-            JOptionPane.showMessageDialog(null, " User Name is invalid");
+            JOptionPane.showMessageDialog(null, "The entered User Name is not of valid format.");
        
             return;
         }
@@ -294,19 +294,19 @@ public class ManageCustomers extends javax.swing.JPanel {
          try {
              
             if(password==null || password.isEmpty()){
-                throw new NullPointerException("Pwd field is Empty");
+                throw new NullPointerException("The field of Password is Empty.");
             }else if(Pattern.matches("^(?=(.*[a-z]){1,})(?=(.*[\\d]){1,})(?=(.*[\\W]){1,})(?!.*\\s).{5,30}$", password)==false){
-                throw new Exception("Invalid Password");
+                throw new Exception("Invalid password. Minimum 5 characters and at least one number is mandatory.");
             }
             
             
         }  catch(NullPointerException e){
-             JOptionPane.showMessageDialog(null, "Password is Empty");
+             JOptionPane.showMessageDialog(null, "The field of Password is Empty.");
             
              
              return;
         }catch (Exception e) {
-             JOptionPane.showMessageDialog(null, "Password is of invalid pattern");
+             JOptionPane.showMessageDialog(null, "Invalid password. Minimum 5 characters and at least one number is mandatory.");
              
              
              return;
@@ -314,7 +314,7 @@ public class ManageCustomers extends javax.swing.JPanel {
         
         
         if (system.getUserAccountDirectory().checkIfUsernameIsUnique(uname)==false) {
-            JOptionPane.showMessageDialog(null,"  User Name already exists ");
+            JOptionPane.showMessageDialog(null,"A user with the same User Name already exists.");
         }else{
             
         
@@ -347,7 +347,7 @@ public class ManageCustomers extends javax.swing.JPanel {
 
         }
         else {
-            JOptionPane.showMessageDialog(null,"Please select a row");
+            JOptionPane.showMessageDialog(null,"Please select a row.");
         }
         
         submitJButton.setEnabled(false);
@@ -361,18 +361,18 @@ public class ManageCustomers extends javax.swing.JPanel {
         int selectedRow = networkJTable.getSelectedRow();
         if(selectedRow>=0){
             int selectionButton = JOptionPane.YES_NO_OPTION;
-            int selectionResult = JOptionPane.showConfirmDialog(null, "Are you sure to delete??","Warning",selectionButton);
+            int selectionResult = JOptionPane.showConfirmDialog(null, "Are you sure that you want to delete?","Warning",selectionButton);
             if(selectionResult == JOptionPane.YES_OPTION){
                 String username= (String) networkJTable.getValueAt(selectedRow, 1);
                 String pwd= (String) networkJTable.getValueAt(selectedRow, 2);
                 UserAccount user=system.getUserAccountDirectory().authenticateUser(username, pwd);
 
-                //UserAccount user = (UserAccount) networkJTable.getValueAt(selectedRow, 0);
+                
                 system.getUserAccountDirectory().deleteUserAccount(user);
                 system.getCustomerDirectory().deleteCustomer(user.getUsername());
             }
         }else{
-            JOptionPane.showMessageDialog(null, "Please select a Row!!");
+            JOptionPane.showMessageDialog(null, "Please select a Row first!");
         }
         populateNetworkTable();
     }//GEN-LAST:event_deleteBtnActionPerformed
@@ -386,40 +386,40 @@ public class ManageCustomers extends javax.swing.JPanel {
               
         try {
              if(name==null || name.isEmpty()){
-                throw new NullPointerException(" Name field is Empty");
+                throw new NullPointerException("The field of Name is Empty.");
                 
                 
             }else if(name.length()<5 || Pattern.matches("^[A-Za-z]+$", name)==false){
-                throw new Exception("Please enter valid  Name");
+                throw new Exception("Please enter the Name of valid format.");
                 
             }
         } catch(NullPointerException e){
-            JOptionPane.showMessageDialog(null, " Name is Empty");
+            JOptionPane.showMessageDialog(null, "The field of Name is Empty");
            
             return;
             
         }catch (Exception e){
-            JOptionPane.showMessageDialog(null, "  Name is invalid");
+            JOptionPane.showMessageDialog(null, "The enter value in Name field is invalid.");
        
             return;
         }
         
         try {
              if(uname==null || uname.isEmpty()){
-                throw new NullPointerException("User Name field is Empty");
+                throw new NullPointerException("The field of User Name is Empty.");
                 
                 
             }else if(uname.length()<5){
-                throw new Exception("Please enter valid User Name");
+                throw new Exception("Please enter the User Name of valid format.");
                 
             }
         } catch(NullPointerException e){
-            JOptionPane.showMessageDialog(null, "User Name is Empty");
+            JOptionPane.showMessageDialog(null, "The field of User Name is Empty");
            
             return;
             
         }catch (Exception e){
-            JOptionPane.showMessageDialog(null, " User Name is invalid");
+            JOptionPane.showMessageDialog(null, "The enter value in User Name is of invalid format.");
        
             return;
         }
@@ -427,19 +427,19 @@ public class ManageCustomers extends javax.swing.JPanel {
          try {
              
             if(password==null || password.isEmpty()){
-                throw new NullPointerException("Pwd field is Empty");
+                throw new NullPointerException("The field of Password is Empty.");
             }else if(Pattern.matches("^(?=(.*[a-z]){1,})(?=(.*[\\d]){1,})(?=(.*[\\W]){1,})(?!.*\\s).{5,30}$", password)==false){
                 throw new Exception("Invalid Password");
             }
             
             
         }  catch(NullPointerException e){
-             JOptionPane.showMessageDialog(null, "Password is Empty");
+             JOptionPane.showMessageDialog(null, "The field of Password is Empty.");
             
              
              return;
         }catch (Exception e) {
-             JOptionPane.showMessageDialog(null, "Password is of invalid pattern");
+             JOptionPane.showMessageDialog(null, "Invalid password. Minimum 5 characters and at least one number is mandatory.");
              
              
              return;
@@ -447,7 +447,7 @@ public class ManageCustomers extends javax.swing.JPanel {
         
         
         if (system.getUserAccountDirectory().checkIfUsernameIsUnique(uname)==false) {
-            JOptionPane.showMessageDialog(null,"  User Name already exists ");
+            JOptionPane.showMessageDialog(null,"A user with the same User Name already exists.");
         }else{
             
         system.getUserAccountDirectory().updateUserAccount(user,name,uname,password);
