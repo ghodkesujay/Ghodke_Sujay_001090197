@@ -19,7 +19,7 @@ import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author chief_kmv
+ * @author sujayghodke
  */
 public class ManageMenu extends javax.swing.JPanel {
 
@@ -79,7 +79,7 @@ public class ManageMenu extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Dish Name", "Description", "Prize"
+                "Dish Name", "Description", "Price"
             }
         ) {
             Class[] types = new Class [] {
@@ -111,7 +111,7 @@ public class ManageMenu extends javax.swing.JPanel {
         });
         add(dishNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 100, -1));
 
-        jLabel3.setText("Amount");
+        jLabel3.setText("Price");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, -1, -1));
 
         descTxt.addActionListener(new java.awt.event.ActionListener() {
