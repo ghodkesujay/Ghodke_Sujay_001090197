@@ -36,7 +36,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         this.account=account;
         this.userProcessContainer = userProcessContainer;
         this.system=system;
-        valueLabel.setText("Welcome"+account.getName());
+        valueLabel.setText("Welcome "+account.getName());
         populateTable();
         pastTblPopulate();
         
@@ -95,7 +95,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Restaurant Name", "Address", "Number"
+                "Restaurant Name", "Address", "PhoneNumber"
             }
         ) {
             Class[] types = new Class [] {
@@ -144,7 +144,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         valueLabel.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 158, 26));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 260, 26));
 
         valueLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         valueLabel1.setText("Available Restaurants");
@@ -198,7 +198,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             
             
               MenuPanel manageMenu=new MenuPanel(userProcessContainer,account,system,restaurant);
-             userProcessContainer.add("Manage Restaurents",manageMenu);
+             userProcessContainer.add("Manage Restaurants",manageMenu);
             CardLayout layout=(CardLayout)userProcessContainer.getLayout();
                 layout.next(userProcessContainer);
         }
