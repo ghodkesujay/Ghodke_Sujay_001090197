@@ -18,7 +18,7 @@ import userinterface.CustomerRole.MenuPanel;
 
 /**
  *
- * @author sujayghodke
+ * @author chief_kmv
  */
 public class ManageOrders extends javax.swing.JPanel {
 

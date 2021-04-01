@@ -13,7 +13,16 @@ import java.util.ArrayList;
  * @author sujayghodke
  */
 public class Order {
+    
     private String order_id;
+    private String deliveryAddress;
+    private String restaurentName;
+    private String customerName;
+    private String deliverMan;
+    private ArrayList<Dishes> Order;
+    private String cost;
+    private String status;
+    
 
     public String getOrder_id() {
         return order_id;
@@ -22,13 +31,7 @@ public class Order {
     public void setOrder_id(String order_id) {
         this.order_id = order_id;
     }
-    private String restaurentName;
-    private String customerName;
-    private String deliverMan;
-    private ArrayList<Dishes> Order;
-    private String cost;
-    private String status;
-
+    
     public String getStatus() {
         return status;
     }
@@ -37,10 +40,6 @@ public class Order {
         this.status = status;
     }
 
-   
-    private String deliveryAddress;
-    
-    
 
     public String getRestaurentName() {
         return restaurentName;

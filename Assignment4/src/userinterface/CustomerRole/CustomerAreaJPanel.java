@@ -83,6 +83,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         valueLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         pastTbl = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -94,7 +95,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Restaurent Name", "Address", "Number"
+                "Restaurant Name", "Address", "Number"
             }
         ) {
             Class[] types = new Class [] {
@@ -119,7 +120,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             restaurentTable.getColumnModel().getColumn(2).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 346, 97));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 460, 100));
 
         requestTestJButton.setText("Order Food");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +128,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 130, -1, -1));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, -1, -1));
 
         refreshTestJButton.setText("Refresh");
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -135,7 +136,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, -1, -1));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 450, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("Customer:");
@@ -146,12 +147,12 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 158, 26));
 
         valueLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        valueLabel1.setText("Available Restaurents");
-        add(valueLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 250, 26));
+        valueLabel1.setText("Available Restaurants");
+        add(valueLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 220, 26));
 
         valueLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         valueLabel2.setText("Your Past Orders");
-        add(valueLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 158, 26));
+        add(valueLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, 158, 26));
 
         pastTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -161,7 +162,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Order ID", "Restaurent Name", "Amount", "Status"
+                "Order ID", "Restaurant Name", "Amount", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -181,7 +182,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(pastTbl);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, -1, 100));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, -1, 100));
+
+        jLabel1.setText("Select a restaurant above then click on below button to proceed");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
@@ -210,6 +214,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable pastTbl;

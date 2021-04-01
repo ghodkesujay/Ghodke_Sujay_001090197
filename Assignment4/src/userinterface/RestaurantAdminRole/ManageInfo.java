@@ -17,7 +17,7 @@ import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author sujayghodke
+ * @author chief_kmv
  */
 public class ManageInfo extends javax.swing.JPanel {
 
