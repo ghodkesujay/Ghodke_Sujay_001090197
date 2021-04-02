@@ -76,6 +76,7 @@ public class ManageOrders extends javax.swing.JPanel {
         viewOrderBtn = new javax.swing.JButton();
         AssignBtn1 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -123,7 +124,7 @@ public class ManageOrders extends javax.swing.JPanel {
                 viewOrderBtnActionPerformed(evt);
             }
         });
-        add(viewOrderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, -1, -1));
+        add(viewOrderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 240, 180, -1));
 
         AssignBtn1.setText("Assign to Delivery Man ");
         AssignBtn1.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +132,7 @@ public class ManageOrders extends javax.swing.JPanel {
                 AssignBtn1ActionPerformed(evt);
             }
         });
-        add(AssignBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, -1, -1));
+        add(AssignBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, -1, -1));
 
         jButton1.setText("Refresh");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +141,9 @@ public class ManageOrders extends javax.swing.JPanel {
             }
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 120, -1, -1));
+
+        jLabel1.setText("Please select an order above before choosing options below");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 460, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
@@ -195,6 +199,7 @@ public class ManageOrders extends javax.swing.JPanel {
     private javax.swing.JButton AssignBtn1;
     private javax.swing.JButton backBtn;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable orderTable;
     private javax.swing.JButton viewOrderBtn;

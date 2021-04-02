@@ -104,7 +104,7 @@ public class MenuPanel extends javax.swing.JPanel {
                 cardBtnActionPerformed(evt);
             }
         });
-        add(cardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
+        add(cardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
 
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -112,15 +112,15 @@ public class MenuPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 560, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 540, -1, -1));
 
         valueLabel.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 130, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 170, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("Address:");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 120, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 470, 120, 30));
 
         cartTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -150,7 +150,7 @@ public class MenuPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(cartTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, -1, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 460, 100));
 
         menuTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -180,7 +180,7 @@ public class MenuPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(menuTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, -1, 100));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 460, 100));
 
         orderBtn1.setText("Order");
         orderBtn1.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +188,7 @@ public class MenuPanel extends javax.swing.JPanel {
                 orderBtn1ActionPerformed(evt);
             }
         });
-        add(orderBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 540, -1, -1));
+        add(orderBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 540, -1, -1));
 
         RemoveBtn.setText("Remove From Cart");
         RemoveBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -196,12 +196,12 @@ public class MenuPanel extends javax.swing.JPanel {
                 RemoveBtnActionPerformed(evt);
             }
         });
-        add(RemoveBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, -1, -1));
-        add(addressTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 490, 170, -1));
+        add(RemoveBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, -1, -1));
+        add(addressTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 470, 240, -1));
 
         enterpriseLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel1.setText("Order Here:");
-        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 120, 30));
+        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, 120, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void cardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cardBtnActionPerformed

@@ -115,7 +115,7 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(DeliveryManJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 404, 91));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 460, 100));
 
         AssignOrderBtn.setText("Assign Order");
         AssignOrderBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -123,7 +123,7 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
                 AssignOrderBtnActionPerformed(evt);
             }
         });
-        add(AssignOrderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, -1, -1));
+        add(AssignOrderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, -1, -1));
 
         BackBtn.setText("<< Back");
         BackBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -133,8 +133,8 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
         });
         add(BackBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
 
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, -1, -1));
+        jLabel1.setText("Assign a delivery man");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 60, 140, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void AssignOrderBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AssignOrderBtnActionPerformed

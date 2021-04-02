@@ -69,7 +69,7 @@ public class ManageMenu extends javax.swing.JPanel {
                 amtTxtActionPerformed(evt);
             }
         });
-        add(amtTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 420, 100, -1));
+        add(amtTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 180, -1));
 
         MenuTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -109,7 +109,7 @@ public class ManageMenu extends javax.swing.JPanel {
                 dishNameTxtActionPerformed(evt);
             }
         });
-        add(dishNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 100, -1));
+        add(dishNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 180, -1));
 
         jLabel3.setText("Price");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, -1, -1));
@@ -119,7 +119,7 @@ public class ManageMenu extends javax.swing.JPanel {
                 descTxtActionPerformed(evt);
             }
         });
-        add(descTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 370, 100, -1));
+        add(descTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, 180, -1));
 
         deleteBtn.setText("Delete");
         deleteBtn.addActionListener(new java.awt.event.ActionListener() {
